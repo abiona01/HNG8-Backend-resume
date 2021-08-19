@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<title>Resume</title>
+	</head>
+	<body>
+		<header>
+			<nav class="transparent z-depth-0">
+				<div class="nav-wrapper">
+					<a href="" class="sidenav-trigger" data-target="mobile-menu">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li class="logo">
+							<a href="https://hng.tech/">
+								<img
+									src="image/hng_logo.png"
+									alt="HNG logo"
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+						<li class="logo">
+							<a href="https://zuri.team/">
+								<img
+									src="image/zuri_logo.png"
+									alt=""
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+						<li class="logo">
+							<a href="https://ingressive.org/">
+								<img
+									src="image/i4good_logo.png"
+									alt=""
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+					</ul>
+					<ul class="sidenav white" id="mobile-menu">
+						<li class="logo">
+							<a href="https://hng.tech/">
+								<img
+									src="image/hng_logo.png"
+									alt="HNG logo"
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+						<li class="logo">
+							<a href="https://zuri.team/">
+								<img
+									src="image/zuri_logo.png"
+									alt=""
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+						<li class="logo">
+							<a href="https://ingressive.org/">
+								<img
+									src="image/i4good_logo.png"
+									alt=""
+									width="50px"
+									height="50px"
+								/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div>
+					<h5 class="white-text flow-text" style="font-size: 20px">
+						Hi, I'm <strong>Adewemimo</strong>, I'm a frontend developer
+					</h5>
+					<div class="cta center">
+						<a
+							href="https://github.com/abiona01?tab=repositories"
+							class="btn red"
+							style="margin-right: 10px"
+							>View Projects</a
+						>
+						<a
+							href="mailto:quadratwemimo@gmail.com"
+							class="btn white red-text text-darken-1"
+							style="margin-right: 10px"
+							>Contact</a
+						>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="about" id="about">
+				<div class="info">
+					<div class="image">
+						<img src="image/my-picture.jpg" alt="Adewemimo" />
+					</div>
+					<div class="info-word">
+						<h6 class="red-text text-darken-1 bold">About me</h6>
+						<p class="info-text">
+							My name is Abiona Quadrat Adewemimo. I describe myself as a
+							passionate developer who loves to code, I'm am self-taught
+							developer with a wide-range of knowledge about coding tools and I
+							work well in teams.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="skills" id="skills">
+				<h4 class="center" style="padding-bottom: 0.3rem">SKILLS</h4>
+				<ul class="skill-list">
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>HTML
+					</li>
+
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>REACT JS
+					</li>
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>SCSS
+					</li>
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>JAVASCRIPT
+					</li>
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>GIT
+					</li>
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>NEXT JS
+					</li>
+					<li>
+						<i class="material-icons red-text text-darken-1">arrow_forward</i
+						>CSS
+					</li>
+				</ul>
+			</section>
+			<section class="certifications" id="certifications">
+				<div class="row">
+					<h4 class="center">CERTIFICATIONS</h4>
+					<div class="col s12 m6 l5">
+						<p>RESPONSIVE WEB DESIGN</p>
+						<a
+							class="red-text text-darken-1"
+							href="https://freecodecamp.org/certification/abiona01/responsive-web-design"
+							>link</a
+						>
+					</div>
+					<div class="col s12 m6 l5 offset-l1">
+						<p>JAVASCRIPT ALGORITHM AND DATA STRUCTURE</p>
+						<a
+							class="red-text text-darken-1"
+							href="https://freecodecamp.org/certification/abiona01/javascript-algorithms-and-data-structures"
+							>Link</a
+						>
+					</div>
+				</div>
+			</section>
+			<section class="form" id="contact"></section>
+		</main>
+		<footer class="red darken-3">
+			<div class="container center">
+				<form
+					method="POST"
+					id="contact"
+					enctype="multipart/form-data"
+					action="send"
+					required
+				>
+					<div class="input-field">
+						<i class="material-icons prefix white-text">person</i>
+						<input type="text" id="name" name="name" class="white-text" />
+						<label for="name" class="white-text">Your Name</label>
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix white-text">person</i>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							class="white-text"
+							aria-describedby="emailHelp"
+							required
+						/>
+						<label for="email" class="white-text">Your Email</label>
+					</div>
+					<div class="input-field">
+						<i class="material-icons prefix white-text">message</i>
+						<textarea
+							class="materialize-textarea"
+							id="message"
+							name="message"
+							cols="30"
+							rows="10"
+							class="white-text"
+							required
+						></textarea>
+						<label for="message" class="white-text">Your Message</label>
+					</div>
+					<div class="center">
+						<button type="submit" class="btn white red-text text-darken-1">
+							Send
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="footer-div">
+				<div class="footer-copyright">
+					<div class="container white-text">© 2021 Adewemimo</div>
+				</div>
+			</div>
+		</footer>
+		<script src="script.js
+		"></script>
+		<!-- Compiled and minified JavaScript -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".sidenav").sidenav();
+			});
+		</script>
+	</body>
+</html>
