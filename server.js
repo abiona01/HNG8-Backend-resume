@@ -1,7 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const nodemailer = require("nodemailer");
-const multiparty = require("multiparty");
 const colors = require("colors");
 require("dotenv").config();
 
