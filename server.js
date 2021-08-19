@@ -5,6 +5,8 @@ const multiparty = require("multiparty");
 const colors = require("colors");
 require("dotenv").config();
 
+const port = process.env.PORT || 5000;
+
 const app = express();
 
 app.use(cors({ origin: "*" }));
@@ -46,7 +48,6 @@ app.post("/send", (req, res) => {
 		transporter.sendMail(mail, (err, data) => {
 			if (err) {
 				console.log(err);
-				res.status(500).send("Something went wrong.");
 			} else {
 				res.status(200).send("Email successfully sent!");
 			}
@@ -58,6 +59,6 @@ app.post("/send", (req, res) => {
 app.route("/").get(function (req, res) {
 	res.sendFile(process.cwd() + "/public/index.html");
 });
-const port = process.env.PORT || 5000;
+
 app.listen(port);
 console.log(`Server running on port ${port}`.yellow.bold);
