@@ -191,12 +191,18 @@
 					method="POST"
 					id="contact"
 					enctype="multipart/form-data"
-					action="send"
+					action="https://formsubmit.co/54d7750b56031e1fdc943d42c568d57c"
 					required
 				>
 					<div class="input-field">
 						<i class="material-icons prefix white-text">person</i>
-						<input type="text" id="name" name="name" class="white-text" />
+						<input
+							type="text"
+							id="name"
+							name="name"
+							class="white-text"
+							required
+						/>
 						<label for="name" class="white-text">Your Name</label>
 					</div>
 					<div class="input-field">
@@ -214,12 +220,11 @@
 					<div class="input-field">
 						<i class="material-icons prefix white-text">message</i>
 						<textarea
-							class="materialize-textarea"
+							class="materialize-textarea white-text"
 							id="message"
 							name="message"
 							cols="30"
 							rows="10"
-							class="white-text"
 							required
 						></textarea>
 						<label for="message" class="white-text">Your Message</label>
