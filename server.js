@@ -39,8 +39,8 @@ app.post("/send", (req, res) => {
 		console.log(data);
 		const mail = {
 			sender: `${data.name} <${data.email}>`,
-			to: process.env.EMAIL, // receiver email,
-			subject: "Holla",
+			to: process.env.EMAIL,
+			subject: "Contact Request",
 			text: `${data.name} <${data.email}> \n${data.message}`,
 		};
 		transporter.sendMail(mail, (err, data) => {

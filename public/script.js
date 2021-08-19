@@ -7,7 +7,7 @@ const formEvent = form.addEventListener("submit", (e) => {
 });
 
 const sendMail = (mail) => {
-	fetch("https://localhost:5000/send", {
+	fetch("https://resume-not-available.herokuapp.com/send", {
 		method: "post",
 		body: mail,
 	}).then((response) => {
