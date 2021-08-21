@@ -14,7 +14,12 @@ app.use(cors({ origin: "*" }));
 app.use("/", express.static(process.cwd() + "/public"));
 
 const transporter = nodemailer.createTransport({
-	service: "gmail",
+	host: "smtp-mail.outlook.com",
+	secureConnection: false,
+	port: 587,
+	tls: {
+		ciphers: "SSLv3",
+	},
 	auth: {
 		user: process.env.EMAIL,
 		pass: process.env.PASS,

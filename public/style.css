@@ -79,7 +79,7 @@ section {
 
 .about,
 .skills,
-.certifications,
+.experiences,
 .footer-div {
 	width: 90vw;
 	margin: 0 auto;
@@ -94,7 +94,7 @@ section {
 	text-align: start;
 }
 
-li {
+.skill-list li {
 	width: 30%;
 	padding: 1rem 0;
 	font-weight: 600;
@@ -102,6 +102,18 @@ li {
 	margin-bottom: 1rem;
 	align-items: center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.experience {
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.01);
+
+	min-height: 270px;
+	height: 100%;
+	padding-left: 1rem;
+	padding-top: 0.2rem;
+}
+.experience li {
+	display: flex;
+	align-items: initial;
 }
 
 .footer-div {
