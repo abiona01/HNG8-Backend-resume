@@ -1,3 +1,16 @@
+body {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 header {
 	background: url("./image/laptop-glowing-in-the-dark-min.jpg");
 	background-position: center;
@@ -7,11 +20,23 @@ header {
 .nav-wrapper {
 	padding: 1rem;
 }
+.header-div {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
 .side-nav {
 	padding-top: 1rem;
 }
 .cta {
 	padding-top: 1rem;
+}
+.cta .btn {
+	transition: transform 1s;
+}
+.cta .btn:hover {
+	transform: scale(1.2);
 }
 
 .container {
@@ -55,7 +80,6 @@ section {
 .about,
 .skills,
 .certifications,
-
 .footer-div {
 	width: 90vw;
 	margin: 0 auto;
@@ -75,7 +99,9 @@ li {
 	padding: 0 2rem 1rem 0;
 	font-weight: 600;
 	display: flex;
+	margin-bottom: 1rem;
 	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .footer-div {
@@ -100,6 +126,9 @@ footer {
 	h4 {
 		font-size: 1.2rem;
 	}
+	.cta .btn {
+		margin-bottom: 1rem;
+	}
 	.material-icons {
 		font-size: 1rem !important;
 	}
@@ -110,7 +139,7 @@ footer {
 		width: 80%;
 	}
 	li {
-		width: 50%;
+		width: 45%;
 		padding-right: 1rem;
 	}
 	.info-word {
