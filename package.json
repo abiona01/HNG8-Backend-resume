@@ -3,7 +3,14 @@
 		"colors": "^1.4.0",
 		"cors": "^2.8.5",
 		"dotenv": "^10.0.0",
+		"ejs": "^3.1.6",
 		"express": "^4.17.1",
+		"express-handlebars": "^5.3.3",
+		"fs": "^0.0.1-security",
+		"mongoose": "^5.13.7",
+		"multiparty": "^4.2.2",
+		"nodemailer": "^6.6.3",
+		"nodemon": "^2.0.12",
 		"path": "^0.12.7"
 	},
 	"scripts": {
@@ -15,8 +22,5 @@
 	"main": "server.js",
 	"author": "Abiona Quadrat A.",
 	"license": "MIT",
-	"description": "",
-	"devDependencies": {
-		"nodemon": "^2.0.12"
-	}
+	"description": ""
 }
