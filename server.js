@@ -44,7 +44,7 @@ app.post("/send", (req, res) => {
 		});
 		console.log(data);
 		const mail = {
-			sender: `${data.name} <${data.email}>`,
+			sender: "adewemimoabiona@outlook.com",
 			to: process.env.EMAIL,
 			subject: "Contact Request",
 			text: `${data.name} <${data.email}> \n${data.message}`,
