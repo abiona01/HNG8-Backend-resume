@@ -55,10 +55,5 @@ app.post("/send", (req, res) => {
 	});
 });
 
-//Index page (static HTML)
-app.route("/").get(function (req, res) {
-	res.sendFile(process.cwd() + "/public/index.html");
-});
-
 app.listen(port);
 console.log(`Server running on port ${port}`.yellow.bold);
