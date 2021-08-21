@@ -21,7 +21,6 @@ const transporter = nodemailer.createTransport({
 	},
 });
 
-// verify connection configuration
 transporter.verify(function (error, success) {
 	if (error) {
 		console.log(error);
@@ -50,7 +49,7 @@ app.post("/send", (req, res) => {
 				console.log(err);
 				res.status(500).send("Something went wrong.");
 			} else {
-				res.status(200).send("Email successfully sent!");
+				res.status(200).sendFile(process.cwd() + "/public/sent.html");
 			}
 		});
 	});
